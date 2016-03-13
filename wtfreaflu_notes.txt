@@ -1,0 +1,7 @@
+Dyrektywy + Digest Loop ~ Komponenty + Virtual DOM
+Virtual DOM - wewnętrzna struktura React, imituje DOM przeglądarki, nie robi renderowania
+React porównuje DOM do Virtual DOM (porównanie drzew), kalkuluje najmniejszą ilość kroków do aktualizacji DOM, żeby był zgodny z Virtual DOM
+Renderowanie strony jest wolne
+Tworzenie Virtual DOM jest szybkie
+Update UI aplikacji niekoniecznie wymaga updejtu DOM, porównywanie DOM-ów oszczędza zbędnej zmiany w DOM i przerenderowania strony
+Komponenty - budulec UI, wszystko jest komponentem, zagnieżdżamy komponenty w parent component; granulacja komponentów
