@@ -5,3 +5,4 @@ Renderowanie strony jest wolne
 Tworzenie Virtual DOM jest szybkie
 Update UI aplikacji niekoniecznie wymaga updejtu DOM, porównywanie DOM-ów oszczędza zbędnej zmiany w DOM i przerenderowania strony
 Komponenty - budulec UI, wszystko jest komponentem, zagnieżdżamy komponenty w parent component; granulacja komponentów
+Komponent budujemy jako strukturę JS, która znajduje się w pamięci, React decyduje, co i kiedy renderować (aktualizacja DOM), React generuje HTML i DOM

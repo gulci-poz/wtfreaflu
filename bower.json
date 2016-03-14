@@ -1,0 +1,16 @@
+{
+  "name": "wtfreaflu",
+  "homepage": "https://github.com/gulci-poz/wtfreaflu",
+  "authors": [
+    "gulci-poz <sebastian.gulczynski.poznan@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "react": "^0.14.7",
+    "bootstrap": "^3.3.6"
+  }
+}
