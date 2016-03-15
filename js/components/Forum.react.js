@@ -1,11 +1,4 @@
-// komponent nadrzędny (parent) Forum
-// funkcja createClass() zwraca komponent
-
 var Forum = React.createClass({
-
-    // dane w parent component mogą być dostępne dla child components, możemy je przekazać za pomocą atrybutu (mamy this.state) w createElement do ForumHeader
-    // mamy dostęp do tych danych w ForumHeader za pomocą this.props
-    // dane aktualizujemy na jednym poziomie, React odtwarza cały Virtual DOM po każdej zmianie - wszystko dzieje się w pamięci, bardzo szybko
 
     getInitialState: function () {
 
@@ -34,16 +27,19 @@ var Forum = React.createClass({
 
     render: function () {
 
-        // zwracamy element React, który jest wrapperem dla HTML
-        // element będzie dodany do Virtual DOM
-        // React decyduje, co dalej będzie się działo z elementem
-        // drugi argument to obiekt zawierający atrybuty elementu w postaci name/value
-        // kolejne argumenty to child elements naszego elementu
+        return (
+            <div>
+                <ForumHeader />
 
-        return React.createElement(
-            "div",
-            null,
-            React.createElement(ForumHeader, { allAnswers: this.state.allAnswers })
+                <div className="container">
+                    <ForumQuestion />
+                    <hr />
+                    <ForumAnswers allAnswers={this.state.allAnswers} />
+                    <hr />
+                    <h4>Add an answer</h4>
+                    <ForumAddAnswerBox />
+                </div>
+            </div>
         );
 
     }

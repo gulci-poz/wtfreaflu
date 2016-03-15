@@ -1,0 +1,23 @@
+{
+  "name": "wtfreaflu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel js -d lib --presets react"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gulci-poz/wtfreaflu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gulci-poz/wtfreaflu/issues"
+  },
+  "homepage": "https://github.com/gulci-poz/wtfreaflu#readme",
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-preset-react": "^6.5.0"
+  }
+}
