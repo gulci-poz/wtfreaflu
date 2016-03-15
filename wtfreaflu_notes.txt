@@ -11,4 +11,20 @@ npm install babel-cli --save-dev
 npm install babel-preset-react --save-dev
 Definiujemy skrypt build w package.json
 npm run build
+
 Angular to kompletny framework, React odpowiada za część View
+Flux - koncept architektury, podobny do MV*
+One way data flow
+View - wszystko, co może wydarzyć się w widoku
+Jeśli coś się wydarzy, to informacja jest wysyłana do Dispatchera; dokładniej jest wysyłana Fake Action
+Jest tylko jeden Dispatcher
+Aplikacja składa się z Event Emitters (Stores)
+Dispatcher powiadamia wszystkie EE, że miało miejsce dane zdarzenie
+Po wykonaniu logiki aplikacji i aktualizacji danych EE wyśle do View informację, że może się całkowicie przerenderować (Virtual DOM, w DOM będą renderowane tylko zmiany, jest to bardzo szybki proces)
+View nie musi wiedzieć, co się zmieniło
+
+JS EE ~ Fake Events, tablice funkcji (nie zdarzenia przeglądarki)
+Dispatcher - fake event listening; funkcje, które odpowiadają na dane akcje
+Fake actions - values + data; używamy właściwości obiektów
+Przykład akcji: value: dodaj nową odpowiedź, data: nowa odpowiedź
+Dispatcher zawiera kolekcję funkcji; uruchamia funkcje, które odpowiadają na dane akcje (przekazuje akcje do tych funkcji) - uruchamia wszystkie funkcje
